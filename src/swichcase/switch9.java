@@ -1,20 +1,26 @@
 package swichcase;
 
+import java.util.Scanner;
+
 public class switch9 {
     public static void main(String[] args) {
-        function(1,3);
+        Scanner scanner=new Scanner(System.in);
+
+        function(31,1);
 
     }
     public static void function(int day, int month) {
 //  day < 1 || day > 31 || month < 1 || month > 12
-        if (day <= 0 || day > 31 || month < 1 || month > 12) {
+        if (day < 0 || day > 32 || month < 1 || month > 12) {
             System.out.println("bunday kun mavjud emas");
         } else {
             //albatta day 1..31,  month 1..12
             switch (month) {
                 case 1 ->{
                     day++;
-                    System.out.println((day) + "-yanvar");   }
+                    System.out.println((day) + "-yanvar");
+
+                }
 
                 case 3 ->{
                     day++;
