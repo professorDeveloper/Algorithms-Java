@@ -42,16 +42,16 @@ public class switch10 {
                 switch (y) {
                     case 's' -> result = garb;
                     case 'j' -> result = sharq;
-                    case 'q' -> result = north;
-                    case 'g' -> result = south;
+                    case 'q' -> result = north;//Shimol
+                    case 'g' -> result = south;//Janub
                 }
             }
             case 2 -> { // o'ngga
                 switch (y) {
                     case 's' -> result = sharq;
                     case 'j' -> result = garb;
-                    case 'q' -> result = south;
-                    case 'g' -> result = north;
+                    case 'q' -> result = south;//Janub
+                    case 'g' -> result = north;//Shimol
                 }
             }
         }

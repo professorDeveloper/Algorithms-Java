@@ -20,6 +20,7 @@ public class switch12 {
                 System.out.println("1- Doira Diametri Aniqlash");
                 System.out.println("2- Doira uzunligi Aniqlash");
                 System.out.println("3- Doira yuzasi  Aniqlash");
+                System.out.println("tanlang :");
                 int aniqlash = scanner.nextInt();
                 switch (aniqlash) {
                     case 1 -> {

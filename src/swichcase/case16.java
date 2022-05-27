@@ -7,7 +7,7 @@ public class case16 {
         Scanner scanner=new Scanner(System.in);
         System.out.println("number :");
         int number=scanner.nextInt();
-        if (number<100 && 0<number){
+        if (number<69 && 21<number){
             decimal(number);
             unit(number,"yosh");
         }

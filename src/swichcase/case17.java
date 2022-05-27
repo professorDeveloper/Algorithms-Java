@@ -9,13 +9,14 @@ public class case17 {
         int number=scanner.nextInt();
         if (number<100 && 0<number){
             decimal(number);
-            unit(number,"masala");
+            unit(number);
         }
         else {
             System.err.println("Sonlar oralig`i 1...99");
         }
     }
-    public static void unit(int number,String str){
+    public static void unit(int number){
+        String str="masala";
         int result =number%10;
         if (number<10){
             switch (number){
