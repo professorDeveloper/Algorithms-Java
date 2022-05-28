@@ -6,83 +6,59 @@ public class switch9 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
 
-        function(31,1);
+        function(30,1);
 
     }
     public static void function(int day, int month) {
-//  day < 1 || day > 31 || month < 1 || month > 12
-        if (day < 0 || day > 32 || month < 1 || month > 12) {
-            System.out.println("bunday kun mavjud emas");
-        } else {
-            //albatta day 1..31,  month 1..12
-            switch (month) {
-                case 1 ->{
-                    day++;
-                    System.out.println((day) + "-yanvar");
 
+
+        switch (month)
+        {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                if (day == 31)
+                {
+
+                    day = 0;
                 }
-
-                case 3 ->{
-                    day++;
-
-                    System.out.println(day + "-mart");}
-                case 5 -> {
-                    day++;
-
-                    System.out.println(day + "-may");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                if (day == 30)
+                {
+                    day = 0;
                 }
-                case 7 -> {
-                    day++;
-
-                    System.out.println(day + "-iyul");
+                break;
+            case 2:
+                if (day == 28)
+                {
+                    day = 0;
                 }
-                case 8 -> {
-                    day++;
+                break;
+        }
 
-                    System.out.println(day + "-avgust");
-                }
-                case 10 -> {
-                    day++;
-
-                    System.out.println(day + "-oktyabr");
-                }
-                case 12 -> {
-                    day++;
-
-                    System.out.println(day + "-dekabr");
-                }
-                case 2 -> {
-                    if (day <= 28)
-                        System.out.println(day + "-fevral");
-                    else System.out.println("bunday kun mavjud emas");
-                }
-                case 4 -> {
-                    day++;
-
-                    if (day < 31) System.out.println(day + "-aprel");
-                    else System.out.println("bunday kun mavjud emas");
-                }
-                case 6 -> {
-                    day++;
-
-                    if (day < 31) System.out.println(day + "-iyun");
-                    else System.out.println("bunday kun mavjud emas");
-                }
-                case 9 -> {
-                    day++;
-
-                    if (day < 31) System.out.println(day + "-sentyabr");
-                    else System.out.println("bunday kun mavjud emas");
-                }
-                case 11 -> {
-                    day++;
-
-                    if (day < 31) System.out.println(day + "-noyabr");
-                    else System.out.println("bunday kun mavjud emas");
-                }
-
+        if (day == 0)
+        {
+            if (month== 12)
+            {
+                month = 1;
+            }
+            else
+            {
+                month++;
             }
         }
+
+        day++;
+        System.out.printf("Natija : %d.%d\n",day,month);
+
     }
 
 }

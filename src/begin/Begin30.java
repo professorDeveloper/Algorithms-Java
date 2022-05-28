@@ -1,4 +1,4 @@
-package uz.gita.lesson3;
+package begin;
 
 public class Begin30 {
     public static void main(String[] args) {
