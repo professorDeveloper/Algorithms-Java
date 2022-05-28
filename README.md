@@ -1,2 +1,2 @@
 # GITA-Masala
-JAVA IF SWITCH and BOOLEAN example QuesTions and AnsWers (:
+JAVA IF SWITCH INTEGER FOR  and BOOLEAN example QuesTions and AnsWers (:
