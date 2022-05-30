@@ -2,7 +2,7 @@ package swichcase;
 
 import java.util.Scanner;
 
-public class case18 {
+public class switch18 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Num:");

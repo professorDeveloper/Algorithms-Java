@@ -2,8 +2,8 @@ package swichcase;
 
 import java.util.Scanner;
 
-public class case16 {
-    public static void main(String[] args) {
+public class switch16 {
+        public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         System.out.println("number :");
         int number=scanner.nextInt();

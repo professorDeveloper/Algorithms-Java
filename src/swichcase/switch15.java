@@ -13,59 +13,30 @@ public class switch15 {
         System.out.print("Turi:");
         m = scanner.nextInt();
 
-        switch (n)
-        {
-            case 6:
-                System.out.print("olti ");
-                break;
-            case 7:
-                System.out.print("Yetti ");
-                break;
-            case 8:
-                System.out.print("Sakkiz ");
-                break;
-            case 9:
-                System.out.print("To`qqiz ");
-                break;
-            case 10:
-                System.out.print("O`n ");
-                break;
-            case 11:
-                System.out.print("Vallet ");
-                break;
-            case 12:
-                System.out.print("Dama ");
-                break;
-            case 13:
-                System.out.print("Qirol ");
-                break;
-            case 14:
-                System.out.print("Tuz ");
-                break;
-
-            default:{
+        switch (n) {
+            case 6 -> System.out.print("olti ");
+            case 7 -> System.out.print("Yetti ");
+            case 8 -> System.out.print("Sakkiz ");
+            case 9 -> System.out.print("To`qqiz ");
+            case 10 -> System.out.print("O`n ");
+            case 11 -> System.out.print("Vallet ");
+            case 12 -> System.out.print("Dama ");
+            case 13 -> System.out.print("Qirol ");
+            case 14 -> System.out.print("Tuz ");
+            default -> {
                 System.out.println("Bunday Qiymat Yo`q");
-                break;
             }
         }
 
 
-        switch (m)
-        {
-            case 1:
-                System.out.print("G`isht\n");
-                break;
-            case 2:
-                System.out.print("Olma\n");
-                break;
-            case 3:
-                System.out.print("Chillak\n");
-                break;
-            case 4:
-                System.out.print("Qarg`a\n");
-                break;
-            default:{
-                System.out.println("Bundat Tur Yo`q");
+        switch (m) {
+
+            case 1 -> System.out.print("G`isht\n");
+            case 2 -> System.out.print("Olma\n");
+            case 3 -> System.out.print("Chillak\n");
+            case 4 -> System.out.print("Qarg`a\n");
+            default -> {
+                System.out.println("Bunday Tur Yo`q");
                 break;
             }
         }
