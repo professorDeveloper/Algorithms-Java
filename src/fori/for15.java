@@ -16,12 +16,12 @@ public class for15 {
         n = scanner.nextInt();
 
 
-        float rez = 1F;
+        float result = 1F;
 
         for (int i = 1; i <= n; ++i)
         {
-            rez *= a;
+            result *= a;
         }
-        System.out.printf("%.1f ning %d-darajasi:%.1f",a,n,rez);
+        System.out.printf("%.1f ning %d-darajasi:%.1f",a,n,result);
     }
 }

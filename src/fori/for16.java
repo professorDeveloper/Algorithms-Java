@@ -13,9 +13,9 @@ public class for16 {
         int result=1;
         for (int i = 1; i <=n ; i++) {
             result*=a;
-
+            System.out.println(result);
         }
-        System.out.println(result);
+
 
 
     }

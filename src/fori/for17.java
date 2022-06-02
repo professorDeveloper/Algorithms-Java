@@ -1,14 +1,11 @@
 package fori;
 
-import java.util.Scanner;
+class for17 {
 
-import static java.lang.System.in;
-
-public class for17 {
     public static void main(String[] args) {
-
 //        solution(4, 0);
-        solution(3, 1.5);
+        pow(1.5, -1);
+        System.out.println(Math.pow(1.5, -1));
     }
 
     // a^0 + a^1 + a^2 +....+ a^n
@@ -20,6 +17,14 @@ public class for17 {
             daraja *= a;
         }
         System.out.printf("%.2f", s);
+    }
 
+    // a*a*a*a*a*a
+    public static void pow(double a, int n) {
+        double f = 1;
+        for (int i = 1; i <= n; i++) {
+            f *= a;
+        }
+        System.out.println(f);
     }
 }

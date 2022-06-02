@@ -2,29 +2,26 @@ package fori;
 
 import java.util.Scanner;
 
-public class for18 {
+public class for25 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
-        float a;
-        System.out.print("A:");
-        a = scanner.nextFloat();
+        float x;
+        System.out.print("X:");
+        x = scanner.nextInt();
 
         int n;
         System.out.print("N:");
         n = scanner.nextInt();
 
-
-        float counter = 1F;
-        float result = 1F;
-
+        float result = x;
+        float sum = x;
 
         for (int i = 2; i <= n; ++i)
         {
-            counter *= -a;
-            result += counter;
+            result *= -1 * x;
+            sum += result / i;
         }
-//
-    System.out.println("Natija:" +result);
+        System.out.print(sum);
 
     }
 }

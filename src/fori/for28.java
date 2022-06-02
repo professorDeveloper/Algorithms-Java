@@ -2,10 +2,11 @@ package fori;
 
 import java.util.Scanner;
 
-public class for22 {
+public class for28 {
     public static void main(String[] args) {
         float x;
         Scanner scanner=new Scanner(System.in);
+
         System.out.print("X:");
         x = scanner.nextFloat();
 
@@ -13,17 +14,17 @@ public class for22 {
         System.out.print("N:");
         n = scanner.nextInt();
 
-
-        float x1 = 1F;
-        float n1 = 1F;
-        float result = 1.0F;
-
-
-        for (int i = 1; i <= n; ++i)
+        float temp1 = 1F;
+        float temp2 = 1F;
+        float result = 1F;
+        float pow = 1F;
+        int i;
+        for (i = 1; i < n; ++i)
         {
-            n1 *= (float)i;
-            x1 *= x;
-            result += x1 / n1;
+            temp1 *= 2 * i - 3;
+            temp2 *= 2 * i;
+            pow *= (-1) * x;
+            result += temp1 * pow / temp2;
         }
         System.out.print(result);
 
