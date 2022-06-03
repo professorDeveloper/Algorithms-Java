@@ -24,8 +24,7 @@ public class for30 {
 
         for ( int i= 0; i <= n; ++i)
         {
-            System.out.print(1 - Math.sin(a + i * h));
-            System.out.print(", ");
+            System.out.println(1 - Math.sin(a + i * h)+",");
         }
 
     }

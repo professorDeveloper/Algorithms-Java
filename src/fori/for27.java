@@ -24,7 +24,7 @@ public class for27 {
             stepen = stepen * (2 * i - 1); // stepen= 1 / 3 / 15
             z = z * (i * 2 + 1) * (i * 2); // 6  / 40
             answer += (stepen * h) / z; // (1*x^3)/6
-            z = z / (i * 2 + 1); // 2   / 8
+            z = z / (i * 2 + 1); // 2   / 8x
         }
         System.out.printf("Javob: %.2f",answer);
 
