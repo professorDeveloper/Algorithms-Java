@@ -4,29 +4,29 @@ import java.util.Scanner;
 
 public class for27 {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
-        double X;
-        System.out.print("Raqamni kiriting X (|X|<1): ");
-        X = scanner.nextDouble();
-        int N;
-        System.out.print("Raqamni kiriting N (>0): ");
-        N = scanner.nextInt();
-        double answer;
-        double z; //
-        double h;
-        double stepen;
-        z = stepen = 1;
-        h = X;
-        answer = X;
-        for (int i = 1; i <= N ;i++)
-        {
-            h = h * X * X; // x^3 / x^5 /x^7
-            stepen = stepen * (2 * i - 1); // stepen= 1 / 3 / 15
-            z = z * (i * 2 + 1) * (i * 2); // 6  / 40
-            answer += (stepen * h) / z; // (1*x^3)/6
-            z = z / (i * 2 + 1); // 2   / 8x
+        Scanner scanner = new Scanner(System.in);
+
+
+        float a;
+        float min = Integer.MAX_VALUE;
+        float minnum = 0;
+        float max = 0;
+        int n;
+        System.out.print("N:");
+        n = scanner.nextInt();
+        for (int i = 1; i <= n; ++i) {
+            System.out.print(i + "-");
+            a = scanner.nextInt();
+
+            if (  (a < min)) {
+                min = a;
+                minnum = i;
+            }
+
+
         }
-        System.out.printf("Javob: %.2f",answer);
+        System.out.println("Element Raqami:"+minnum);
+        System.out.println("Eng kichik son: "+min);
 
 
     }
