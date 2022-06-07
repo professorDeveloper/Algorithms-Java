@@ -4,7 +4,6 @@ public class While5 {
 
     public static void main(String[] args) {
         System.out.println(solution(64));  // 6
-        System.out.println(solution2(64)); // 6
     }
 
     // 2 4 8 16 32 64 128 256 ...
@@ -20,12 +19,4 @@ public class While5 {
 
     // 2 4 8 16 32 64 128 256 ...
     // 32 -> 2^k k=5
-    public static int solution2(int n) {
-        int k = 1, degree = 0;
-        while (k < n) {
-            k *= 2;   // 2  4  8  16  32  64
-            degree++; // 1  2  3  4   5   6
-        }
-        return degree;
-    }
 }
