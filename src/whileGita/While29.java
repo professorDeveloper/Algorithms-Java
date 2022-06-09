@@ -3,7 +3,8 @@ package whileGita;
 public class While29 {
 
     public static void main(String[] args) {
-        solution(0.1); // 2
+        solution(0.1);
+        // 2
     }
 
     // e = 0.1

@@ -9,15 +9,15 @@ public class while18 {
 
         int n;
         int r = 0; //
-        System.out.print("N: ");
+        System.out.print("N: ");// =
         n = scanner.nextInt();
         while (n > 0) {
-            int m = n % 10;
-            r = r * 10 + m;
+            int m = n % 10;//m
+
             n /= 10;
+            System.out.print(m);
 
         }
-        System.out.print("N sonini Chapdan O`nga Qarab O`qilishi: "+r);
 
     }
 }
