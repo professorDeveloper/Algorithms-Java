@@ -26,7 +26,11 @@ public class MinMax11 {
             }
         }
 
-        System.out.printf("Birinchi uchragan ekstremal:  %d\n", Math.max(minnum, maxnum));
+        if (maxnum > minnum) {
+            System.out.printf("Oxirgi uchragan ekstremal:  %d\n", maxnum);
+
+        } else if (minnum > maxnum) System.out.printf("Oxirgi uchragan ekstremal:  %d\n", minnum);
+
 
 
     }

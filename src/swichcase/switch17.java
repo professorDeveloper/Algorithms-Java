@@ -30,6 +30,7 @@ public class switch17 {
                 case 17 -> System.out.print("O`n yetti" + str);
                 case 18 -> System.out.print("O`n sakkiz" + str);
                 case 19 -> System.out.print("O`n to`qqiz" + str);
+
             }
         }
         else

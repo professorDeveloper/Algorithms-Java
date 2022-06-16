@@ -6,7 +6,7 @@ public class MinMax14 {
     public static void main(String[] args) {
         int b;
         int r;
-        int min = Integer.MAX_VALUE;
+        int min = 0;
         int minnum = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("B:");
@@ -16,15 +16,13 @@ public class MinMax14 {
             System.out.print(i+".");
             r= scanner.nextInt();
             //
-            if ((r > b) && ((r < min) || (minnum == 0))) {
-                min = r;
-                minnum = i;
-            }else {
-                minnum= 0;
-                min=0;
+	if ((r > b) && ((r < min) || (minnum == 0)))
+            {
+	min = r;
+	minnum = i;
             }
         }
-        System.out.printf("%d %d\n", minnum,0);
+        System.out.printf("%d %d\n",minnum,min);
 
     }
 }

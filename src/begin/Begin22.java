@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Begin22 {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         int a, b;
 
@@ -13,6 +14,8 @@ public class Begin22 {
         System.out.print("b = ");
         b = scanner.nextInt();
 
+        b=a-b;
+        a=a-b;
         // uchinchi o'zgaruvchi, (zaxira uchun)
         int c = a;
         a = b;

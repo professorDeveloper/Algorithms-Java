@@ -14,11 +14,11 @@ public class begin23 {
         b = scanner.nextInt();
         System.out.print("c = ");
         c = scanner.nextInt();
-        int d= c;
+        int d = c;//
 
-        c=b;
-        b=a;
-        a=d;
+        c = b;  //
+        b = a; //
+        a = d;//
 
 
         System.out.println("a = " + a);

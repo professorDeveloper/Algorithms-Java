@@ -1,0 +1,2 @@
+public class Fun20 {
+}

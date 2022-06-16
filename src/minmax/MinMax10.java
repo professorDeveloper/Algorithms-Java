@@ -26,7 +26,11 @@ public class MinMax10 {
             }
         }
 
-        System.out.printf("Birinchi uchragan ekstremal:  %d\n", Math.min(minnum, maxnum));
+        if (maxnum > minnum) {
+            System.out.printf("Birinchi uchragan ekstremal:  %d\n", minnum);
+
+        } else if (minnum > maxnum) System.out.printf("Birinchi uchragan ekstremal:  %d\n", maxnum);
+
 
     }
 }

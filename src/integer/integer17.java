@@ -7,15 +7,12 @@ public class integer17 {
     {
         Scanner scanner=new Scanner(System.in);
 
-        int a,b,c,d,e;
+        int a,b;
 
         System.out.print("to'rt xonali sonni kiriting->");
         a = scanner.nextInt() ;
-        b = a / 1000;
-        c = a - b * 1000;
-        d = c / 100;
-        e = c - d * 100;
-        System.out.print("Holat -> " +d);
+        b = a % 1000 / 100;
+        System.out.print(b);
 
     }
 }

@@ -26,7 +26,7 @@ public class for28 {
             pow *= (-1) * x;
             result += temp1 * pow / temp2;
         }
-        System.out.print(result);
+        System.out.print(result+"\n");
 
     }
 }
