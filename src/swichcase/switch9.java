@@ -6,7 +6,7 @@ public class switch9 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
 
-        function(30,1);
+        function(31,1);
 
     }
     public static void function(int day, int month) {
